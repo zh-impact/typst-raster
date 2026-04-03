@@ -40,7 +40,7 @@
     "assets"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --external @myriaddreamin/typst-ts-node-compiler",
+    "build": "tsup src/index.ts --format cjs,esm --shims --dts --external @myriaddreamin/typst-ts-node-compiler",
     "test": "vitest run",
     "test:watch": "vitest",
     "prepublishOnly": "npm run build"
